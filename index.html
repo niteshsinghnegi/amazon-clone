@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Amazon Navbar Clone</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<header>
+
+    <!-- NAVBAR -->
+    <div class="navbar">
+
+        <div class="nav-logo border">
+            <div class="logo"></div>
+        </div>
+
+        <div class="nav-address border">
+            <p class="add-first">Deliver to</p>
+            <div class="address-icon">
+                <i class="fa-solid fa-location-dot"></i>
+                <p class="add-second">India</p>
+            </div>
+        </div>
+
+        <div class="nav-search">
+            <select class="search-select">
+                <option>All</option>
+            </select>
+            <input type="text" placeholder="Search Amazon" class="search-input">
+            <div class="search-icon">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+        </div>
+
+        <!-- LOGIN -->
+        <div class="nav-signin border">
+            <a href="login.html" style="color:white; text-decoration:none;">
+                <p><span>Hello, Sign in</span></p>
+                <p class="nav-second">Account & Lists</p>
+            </a>
+        </div>
+
+        <div class="nav-return border">
+            <p><span>Returns</span></p>
+            <p class="nav-second">& Orders</p>
+        </div>
+
+        <!-- CART -->
+        <div class="nav-cart border">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <p>Cart <span id="cart-count">0</span></p>
+        </div>
+
+    </div>
+
+    <!-- PANEL -->
+    <div class="panel">
+        <div class="panel-all">
+            <i class="fa-solid fa-bars"></i>
+            All
+        </div>
+
+        <div class="panel-options">
+            <p>Today's Deals</p>
+            <p>Customer Service</p>
+            <p>Registry</p>
+            <p>Gift Cards</p>
+            <p>Sell</p>
+        </div>
+
+        <div class="panel-deals">
+            Shop deals in Electronics
+        </div>
+    </div>
+
+</header>
+
+<!-- HERO -->
+<div class="hero-section">
+    <div class="hero-message">
+        <p>
+            @ Nitesh singh negi --- You are on amazon.com.
+            <a href="#">Click here to go to amazon.in</a>
+        </p>
+    </div>
+</div>
+
+<!-- SHOP SECTION -->
+<div class="shop-section">
+
+    <!-- PRODUCT TEMPLATE START -->
+
+    <div class="box">
+        <div class="box-content">
+            <h2>Fashion</h2>
+            <div class="box-image" style="background-image: url('amazone@box1.jpg');"></div>
+            <p class="price">₹999</p>
+            <button onclick="addToCart()">Add to Cart</button>
+            <button class="buy">Buy Now</button>
+        </div>
+    </div>
+
+    <div class="box">
+        <div class="box-content">
+            <h2>Furniture</h2>
+            <div class="box-image" style="background-image: url('amazone@box2.jpg');"></div>
+            <p class="price">₹4999</p>
+            <button onclick="addToCart()">Add to Cart</button>
+            <button class="buy">Buy Now</button>
+        </div>
+    </div>
+
+    <div class="box">
+        <div class="box-content">
+            <h2>Shoes</h2>
+            <div class="box-image" style="background-image: url('amazon@box3.jpg');"></div>
+            <p class="price">₹1499</p>
+            <button onclick="addToCart()">Add to Cart</button>
+            <button class="buy">Buy Now</button>
+        </div>
+    </div>
+
+    <div class="box">
+        <div class="box-content">
+            <h2>Crockery</h2>
+            <div class="box-image" style="background-image: url('amazone@box7.jpg');"></div>
+            <p class="price">₹799</p>
+            <button onclick="addToCart()">Add to Cart</button>
+            <button class="buy">Buy Now</button>
+        </div>
+    </div>
+
+    <div class="box">
+        <div class="box-content">
+            <h2>Fashion</h2>
+            <div class="box-image" style="background-image: url('amazone@box9.jpg');"></div>
+            <p class="price">₹799</p>
+            <button onclick="addToCart()">Add to Cart</button>
+            <button class="buy">Buy Now</button>
+        </div>
+    </div>
+
+    <div class="box">
+        <div class="box-content">
+            <h2>Cooler</h2>
+            <div class="box-image" style="background-image: url('amazone@box5.jpg');"></div>
+            <p class="price">₹3199</p>
+            <button onclick="addToCart()">Add to Cart</button>
+            <button class="buy">Buy Now</button>
+        </div>
+    </div>
+
+    <div class="box">
+        <div class="box-content">
+            <h2>Watch</h2>
+            <div class="box-image" style="background-image: url('amazone@box11.jpg');"></div>
+            <p class="price">₹2199</p>
+            <button onclick="addToCart()">Add to Cart</button>
+            <button class="buy">Buy Now</button>
+        </div>
+    </div>
+
+    <div class="box">
+        <div class="box-content">
+            <h2>Outfit</h2>
+            <div class="box-image" style="background-image: url('amazone@box10.jpg');"></div>
+            <p class="price">₹1499</p>
+            <button onclick="addToCart()">Add to Cart</button>
+            <button class="buy">Buy Now</button>
+        </div>
+    </div>
+
+    <div class="box">
+        <div class="box-content">
+            <h2>Girls Outfit</h2>
+            <div class="box-image" style="background-image: url('amazon@box8.jpg');"></div>
+            <p class="price">₹799</p>
+            <button onclick="addToCart()">Add to Cart</button>
+            <button class="buy">Buy Now</button>
+        </div>
+    </div>
+
+    <div class="box">
+        <div class="box-content">
+            <h2>Bedroom Bed</h2>
+            <div class="box-image" style="background-image: url('amazone@box2.jpg');"></div>
+            <p class="price">₹31000</p>
+            <button onclick="addToCart()">Add to Cart</button>
+            <button class="buy">Buy Now</button>
+        </div>
+    </div>
+
+    <div class="box">
+        <div class="box-content">
+            <h2>Headphone</h2>
+            <div class="box-image" style="background-image: url('amazone@box13.png');"></div>
+            <p class="price">₹799</p>
+            <button onclick="addToCart()">Add to Cart</button>
+            <button class="buy">Buy Now</button>
+        </div>
+    </div>
+
+    <!-- FIXED LAST PRODUCT -->
+    <div class="box">
+        <div class="box-content">
+            <h2>Kurta</h2>
+            <div class="box-image" style="background-image: url('amazone@box14.jpg');"></div>
+            <p class="price">₹699</p>
+            <button onclick="addToCart()">Add to Cart</button>
+            <button class="buy">Buy Now</button>
+        </div>
+    </div>
+
+</div>
+
+<!-- JS -->
+<script>
+let cartCount = 0;
+
+function addToCart(){
+    cartCount++;
+    document.getElementById("cart-count").innerText = cartCount;
+}
+</script>
+
+</body>
+</html>
